@@ -84,4 +84,10 @@ In total I ran 3 different ANN models, one basic model, one with an increased nu
 
 Overall, ANN model with increased number of neurons performed the best on this data.
 
+## Limitation and what can be improved
+* Dropping more outliers, since the linear regression model performed worse on higher prices
+* Using less features in the modelling
+* Doing a dimension reduction
+* Hyperparameter tuning with grid search
+
 OSVRNI SE NA DATA CLEANING I FEATURE ENGINEERING
