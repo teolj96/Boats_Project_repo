@@ -1,10 +1,10 @@
-# Boats_Project_repo
+# Boat Price Prediction
 
 ## Business problem
 The goal of the project was to scrape, mine and analyse information about various boats available for sale online. Using this information we could determine the most popular boat features, boat models and boat type. Finally, looking at it from the customers perspective, the goal was to look at the prices ranges for various boats and try to make a regression model which could predict the boat price from these features.
 
 ## Data source
-This is a standalone dataset collected by scraping the boat24.com website using Scrapy. The code for the web scraper is avaliable here, as well as the original csv file of the data.
+This is a standalone dataset collected by scraping the [boat24.com](https://www.boat24.com/uk/secondhandboats/?occ=1979) website using Scrapy. The code for the web scraper is avaliable [here](https://github.com/teolj96/Boats_Project_repo/blob/main/boats.py), as well as the original csv [file](https://github.com/teolj96/Boats_Project_repo/blob/main/boats_final_2.csv) of the data.
 
 ## Data description
 The original data contains the following columns:
@@ -84,7 +84,7 @@ In total I ran 3 different ANN models, one basic model, one with an increased nu
 
 Overall, ANN model with increased number of neurons performed the best on this data.
 
-## Limitation and what can be improved
+## What can be improved
 * Dropping more outliers, since the linear regression model performed worse on higher prices
 * Using less features in the modelling
 * Doing a dimension reduction
