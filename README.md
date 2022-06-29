@@ -24,12 +24,17 @@ The original data contains the following columns:
 * **Price** - The boat's price in british pounds
 
 ## Key findings
-**1.** Jeanneau is the most popular brand of boats, followed by Beneteau and Bavaria. This makes sense because they are the most popular charter boats in the world and are prefered by companies all over the world
-**2.** Motor yachts are the most popular type of boat, followed by sailing boats and sport boats
-**3.** Germany is the most popular location for boat brokers, followed by Switzerland and Italy. For the fact that Switzerlands does't have access to the sea, this is very impressive
-**4.** Though glass reinforced plastic (GRP) is the most common type of material on a boat, carbon fiber is the most expensive type of boat material
-**5.** Bilgin manufactures the most expensive yachts, which is not suprising since they manufacture superyachts. Bilgin is followed by other superyacht manufacturers
-**6.** Price is highly correlated with Length and Width, which makes sense because the boat size is the strongest determining factor of the price
+* Jeanneau is the most popular brand of boats, followed by Beneteau and Bavaria. This makes sense because they are the most popular charter boats in the world and are prefered by companies all over the world
+
+* Motor yachts are the most popular type of boat, followed by sailing boats and sport boats
+
+* Germany is the most popular location for boat brokers, followed by Switzerland and Italy. For the fact that Switzerlands does't have access to the sea, this is very impressive
+
+* Though glass reinforced plastic (GRP) is the most common type of material on a boat, carbon fiber is the most expensive type of boat material
+
+* Bilgin manufactures the most expensive yachts, which is not suprising since they manufacture superyachts. Bilgin is followed by other superyacht manufacturers
+
+* Price is highly correlated with Length and Width, which makes sense because the boat size is the strongest determining factor of the price
 
 ## Graphs
 ![alt text](pictures/boat_model.jpg "Boat Model")
@@ -64,3 +69,17 @@ Picture 7: Correlation matrix
 
 Picture 8: Linear regression model
 
+## Model performance
+I decided to compare a basic linear regression model and neural networks. The main reason I chose linear regression for this is for the simplicity of interpreting the model, which ANNs aren't ideal for. I evaluated the models using MAE and MSE even through MSE but be the better option because of outliers in the data.
+
+In total I ran 3 different ANN models, one basic model, one with an increased number of layers, one with an increased number of neurons and one with stohastic gradient descent as the optimizer.
+
+| Model         | MAE         | MSE         |
+| ------------- |-------------|-------------|
+| Linear Regression      | 45667.50| 5200817068.73 |
+| ANN (Input: 121, Hidden: 121, Output: 1) | 34381.004      |9830265000.0|
+| ANN (Input: 121, Hidden: 121, Hidden: 121, Output: 1)   | 34995.54 | 14412964000.0 |
+| ANN (Input: 121, Hidden: 242, Output: 1)           | **34628.77**      | **10111264000.0** |
+| ANN (Basic model with SGD)                     | 45051.16 | 8585146000.0 |
+
+OSVRNI SE NA DATA CLEANING I FEATURE ENGINEERING
