@@ -82,4 +82,6 @@ In total I ran 3 different ANN models, one basic model, one with an increased nu
 | ANN (Input: 121, Hidden: 242, Output: 1)           | **34628.77**      | **10111264000.0** |
 | ANN (Basic model with SGD)                     | 45051.16 | 8585146000.0 |
 
+Overall, ANN model with increased number of neurons performed the best on this data.
+
 OSVRNI SE NA DATA CLEANING I FEATURE ENGINEERING
