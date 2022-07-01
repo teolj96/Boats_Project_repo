@@ -1,7 +1,8 @@
 # Boat Price Prediction
+![alt text](pictures/wallpaper_boat.jpg "Wallpaper")
 
 ## Business problem
-The goal of the project was to scrape, mine and analyse information about various boats available for sale online. Using this information we could determine the most popular boat features, boat models and boat type. Finally, looking at it from the customers perspective, the goal was to look at the prices ranges for various boats and try to make a regression model which could predict the boat price from these features.
+Working on different sailing yachts and being a sailor hobbyist grew my love towards boats and yachts. Wanting to one day own a sailing boat of my own I decided to figure out what types and models of boat are the most popular and also the most affordable, which engine and propulsion to look for, what number of cabins is most optimal, etc. On top of that, this projects builds a regression model which can predict the boat price on the basis of these features.
 
 ## Data source
 This is a standalone dataset collected by scraping the [boat24.com](https://www.boat24.com/uk/secondhandboats/?occ=1979) website using Scrapy. The code for the web scraper is avaliable [here](https://github.com/teolj96/Boats_Project_repo/blob/main/boats.py), as well as the original csv [file](https://github.com/teolj96/Boats_Project_repo/blob/main/boats_final_2.csv) of the data.
@@ -16,11 +17,11 @@ The original data contains the following columns:
 * **No. of Cabins** - The total number of sleeping cabins in the boat
 * **Propulsion** - The propulsion of the boat, not to be confused with the engine
 * **Engine** - The engine brand in the boat
-* **Engine Performance** - The power of the boat's engine, defined as horsepower
-* **Engine Hours** - The number of hours made by the engine, though this columns was dropped due to hue % of null values
-* **Model** - The brand of the boat, typically the manifacturer
+* **Engine Performance** - The power of the boat's engine, defined in horsepower
+* **Engine Hours** - The number of hours made by the engine, though this columns was dropped due to high % of null values
+* **Model** - The brand of the boat, typically the manufacturer
 * **Type** - The boat type, such as a sailing yacht or a motor yacht
-* **Location** - The location of the boat the the moment. Originally this column contained the regions and subregions as well but only the countries were used in the final data
+* **Location** - The location of the boat. Originally this column contained the regions and subregions as well but only the countries were used in the final data
 * **Price** - The boat's price in british pounds
 
 ## Key findings
