@@ -33,7 +33,9 @@ The original data contains the following columns:
 
 * Though glass reinforced plastic (GRP) is the most common type of material on a boat, carbon fiber is the most expensive type of boat material
 
-* Bilgin manufactures the most expensive yachts, which is not suprising since they manufacture superyachts. Bilgin is followed by other superyacht manufacturers
+* Sunseeker manufactures the most expensive yachts, which is not suprising since they manufacture large yachts. Sunseeker is followed by other large boat manufacturers
+
+* Because of it's high technological dependency, motor yachts are more expensive than sailing yachts in general
 
 * Price is highly correlated with Length and Width, which makes sense because the boat size is the strongest determining factor of the price
 
@@ -94,5 +96,3 @@ Overall, ANN model with increased number of neurons performed the best on this d
 * Using less features in the modelling
 * Doing a dimension reduction
 * Hyperparameter tuning with grid search
-
-OSVRNI SE NA DATA CLEANING I FEATURE ENGINEERING
