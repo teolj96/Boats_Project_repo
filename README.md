@@ -29,6 +29,8 @@ The original data contains the following columns:
 
 * Motor yachts are the most popular type of boat, followed by sailing boats and sport boats
 
+* The inboard direct drive is the most popular type of propulsion, used largly by motor yachts, followed by outboard engines, used largly by smaller speed boats
+
 * Germany is the most popular location for boat brokers, followed by Switzerland and Italy. For the fact that Switzerlands does't have access to the sea, this is very impressive
 
 * Though glass reinforced plastic (GRP) is the most common type of material on a boat, carbon fiber is the most expensive type of boat material
@@ -56,25 +58,29 @@ Picture 3: Location frequency
 
 Picture 4: Most common boat material
 
+![alt text](pictures/propulsion_count.jpg "Propulsion count")
+
+Picture 5: Most common propulsion type
+
 ![alt text](pictures/price_material.jpg "Price by boat material")
 
-Picture 5: Price by boat material
+Picture 6: Price by boat material
 
 ![alt text](pictures/price_model_2.jpg "Price by boat model")
 
-Picture 6: Price by boat manufacturers
+Picture 7: Price by boat manufacturers
 
 ![alt text](pictures/pivot_eng_price.jpg "Pivot table")
 
-Picture 7: Pivot table
+Picture 8: Pivot table
 
 ![alt text](pictures/corr_matrix.jpg "Correlation matrix")
 
-Picture 7: Correlation matrix
+Picture 9: Correlation matrix
 
 ![alt text](pictures/lin_reg.jpg "Linear regression")
 
-Picture 8: Linear regression model
+Picture 10: Linear regression model
 
 ## Model performance
 I decided to compare a basic linear regression model and neural networks. The main reason I chose linear regression for this is for the simplicity of interpreting the model, which ANNs aren't ideal for. I evaluated the models using MAE and MSE even through MSE but be the better option because of outliers in the data.
@@ -90,6 +96,9 @@ In total I ran 3 different ANN models, one basic model, one with an increased nu
 | ANN (Basic model with SGD)                     | 45051.16 | 8585146000.0 |
 
 Overall, ANN model with increased number of neurons performed the best on this data.
+
+## What I learned
+Being an undecisive buyer, this helped me figure out what works more for me. I would like to own a sailing boat 11m long and about 3.6m wide with 2 cabins in total with other features randomized. With the ANN model I got the price of 109967.93 GBP, which is reasonable for a boat that size.
 
 ## What can be improved
 * Dropping more outliers, since the linear regression model performed worse on higher prices
