@@ -104,4 +104,4 @@ Being an undecisive buyer, this helped me figure out what works more for me. I w
 * Dropping more outliers, since the linear regression model performed worse on higher prices
 * Using less features in the modelling
 * Doing a dimension reduction
-* Hyperparameter tuning with grid search
+* Hyperparameter tuning with grid search, although majority of the improvement could come from deeper feature reductiom and engineering
