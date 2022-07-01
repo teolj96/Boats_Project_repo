@@ -58,9 +58,13 @@ Picture 4: Most common boat material
 
 Picture 5: Price by boat material
 
-
+![alt text](pictures/price_model_2.jpg "Price by boat model")
 
 Picture 6: Price by boat manufacturers
+
+![alt text](pictures/pivot_eng_price.jpg "Pivot table")
+
+Picture 7: Pivot table
 
 ![alt text](pictures/corr_matrix.jpg "Correlation matrix")
 
